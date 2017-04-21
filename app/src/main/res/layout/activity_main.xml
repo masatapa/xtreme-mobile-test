@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#E0FFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="myfirstapplication.com.myfirstapplication.MainActivity">
+
+    <TextView android:id="@+id/userNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username :"/>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/userNameText"
+    android:layout_alignBaseline="@+id/userNameText"
+    android:layout_marginTop="10dp"/>
+
+
+    <TextView android:id="@+id/userPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password :"
+        android:layout_below="@+id/userNameText"
+        android:paddingTop="100px"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_toRightOf="@+id/userPwd"
+        android:layout_alignBaseline="@+id/userPwd"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:onClick="showToast"
+        android:layout_below="@+id/userPwd"
+        android:paddingLeft="40px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50px"
+        android:id="@+id/buttonToast"
+        />
+</RelativeLayout>
